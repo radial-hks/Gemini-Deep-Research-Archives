@@ -59,4 +59,6 @@ Gemini 的 **Deep Research（深度研究）** 功能能够针对复杂议题生
 
 ## ⭐ Star History
 
-(这里可以放一个 Star History 的图表，增加社区活跃感)
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=radial-hks/Gemini-Deep-Research-Archives&type=date&legend=top-left)](https://www.star-history.com/#radial-hks/Gemini-Deep-Research-Archives&type=date&legend=top-left)
