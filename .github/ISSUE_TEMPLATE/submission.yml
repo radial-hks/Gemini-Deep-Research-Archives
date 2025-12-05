@@ -1,0 +1,55 @@
+name: 🆕 提交 Deep Research 报告
+description: 分享你用 Gemini 生成的深度研究成果
+title: "[研究提交]: <请在此处填写研究主题>"
+labels: ["submission", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的分享！请尽量详细填写以下信息，这将帮助更多人。
+  
+  - type: dropdown
+    id: category
+    attributes:
+      label: 领域分类
+      options:
+        - 💻 技术与编程
+        - 📈 商业与市场
+        - 🧬 科学与学术
+        - 🎨 人文与历史
+        - 🛠️ 生活与效率
+        - 🧩 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 原始提示词 (Prompt)
+      description: 你是用了什么指令让 Gemini 生成这份报告的？这对于大家学习 Prompt 技巧非常重要。
+      placeholder: 例如：请帮我深度研究一下 React 19 的新特性，并对比它与 Vue 3.4 在性能优化上的异同...
+    validations:
+      required: true
+
+  - type: textarea
+    id: content
+    attributes:
+      label: Deep Research 内容
+      description: 请直接复制粘贴 Gemini 生成的完整 Markdown 内容。
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: model_version
+    attributes:
+      label: 模型版本
+      description: 例如 Gemini Advanced, Gemini 1.5 Pro
+      placeholder: Gemini 1.5 Pro
+
+  - type: textarea
+    id: human_review
+    attributes:
+      label: 🧑‍💻 人类批注/补充 (可选)
+      description: 你对这份报告有什么补充吗？是否有发现错误？或者有实测经验？
+      placeholder: 比如：报告中提到的第三个工具目前已经停止维护了，建议大家跳过...
